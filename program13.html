@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title></title>
+         <script type="text/javascript">
+            function add(){
+                var n1 = parseInt(document.getElementById('num1').value);
+            var n2 = parseInt(document.getElementById('num2').value);
+                var result1 = n1 + n2;
+                window.alert(n1 + " + " +n2 +" = "+ result1);
+                
+            }
+             function subtract(){
+                var n1 = parseInt(document.getElementById('num1').value);
+            var n2 = parseInt(document.getElementById('num2').value);
+                var result1 = n1 - n2;
+                window.alert(n1 + " - " +n2 +" = "+ result1);
+                
+            }
+             function multiply(){
+                var n1 = parseInt(document.getElementById('num1').value);
+            var n2 = parseInt(document.getElementById('num2').value);
+                var result1 = n1 * n2;
+                window.alert(n1 + " * " +n2 +" = "+ result1);
+                
+            }            
+             function divide(){
+                var n1 = parseInt(document.getElementById('num1').value);
+            var n2 = parseInt(document.getElementById('num2').value);
+                var result1 = n1 / n2;
+               window.alert(n1 + " / " +n2 +" = "+ result1);
+                
+            }
+             function modulus(){
+                var n1 = parseInt(document.getElementById('num1').value);
+            var n2 = parseInt(document.getElementById('num2').value);
+                var result1 = n1 % n2;
+                window.alert(n1 + " % " +n2 +" = "+ result1);
+                
+            }
+
+        </script>
+    </head>
+    <body>
+        <form name="frm">
+            <b>ENTER NUMBER1: </b>
+            <input type="number" id="num1"><br><br>
+            <b>ENTER NUMBER2: </b>
+            <input type="number" id="num2"><br><br>
+            <b>RESULT: </b>
+            <input type="text" id="result"><br><br>
+            <input type="submit" onclick="add()" value="ADD">
+            <input type="submit" onclick="subtract()" value="SUBTRACT">&emsp;
+            <input type="submit" onclick="multiply()" value="MULTIPLY"> &emsp;
+            <input type="submit" onclick="divide()" value="DIVIDE">&emsp;
+            <input type="submit" onclick="modulus()" value="MODULUS">&emsp;
+        </form>
+       
+    </body>
+</html>

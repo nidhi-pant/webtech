@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>PROGRAM 19</title>
+        <script>
+            function prime(){
+                var k , j ,i ;
+                var n1 = Number(document.getElementById('num1').value);
+                var n2 = Number(document.getElementById('num2').value);
+                document.getElementById('result').innerHTML = '';
+                for(i = n1;i<=n2;i++){
+                    k=0;
+                    for(j= 1;j<=i;j++){
+                        if(i%j == 0){
+                            k++;
+                        }
+                    }
+                    if(k==2){
+                        document.getElementById('result').insertAdjacentHTML('beforeend' , i + '<br>');
+                        }
+                    }
+                }
+            
+        </script>
+    </head>
+    <body>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <input type="submit" onclick="prime()">
+        <div id="result"> </div>
+    </body>
+</html>

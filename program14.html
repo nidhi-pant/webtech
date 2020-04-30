@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>PROGRAM14</title>
+    </head>
+    <body>
+            <script>
+                var day = new Date();
+                var hr = day.getHours();
+                document.write(day + "<br>");
+                if((hr >= 6)&&(hr<13)){
+                    document.write("GOOD MORNING");
+                }
+                else if((hr>=13)&&(hr<=17)){
+                        document.write("GOOD AFTERNOON");
+                        }
+                else if((hr>17)&&(hr<=24)){
+                        document.write("GOOD NIGHT");
+                        }
+                else if((hr>=1)&&(hr<6)){
+                        document.write("NEW DAY");
+                }
+            </script>
+    </body>
+</html>

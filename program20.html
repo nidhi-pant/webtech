@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>PROGRAM 20</title>
+        <script>
+            function fibo(){
+                var num = Number(document.getElementById('userNum').value);
+                var t1 = 0, t2 = 1 , nt = 0;
+                while(t1<=num){
+                    document.getElementById('result').insertAdjacentHTML('beforeend' , '<br>' + t1 + '<br>');
+
+                    nt = t1 + t2;
+                    t1 = t2;
+                    t2 = nt;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="number" id="userNum">
+        <input type="submit" onclick="fibo()">
+        <b id="result"></b>
+    </body>
+</html>
